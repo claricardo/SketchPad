@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SketchPad</title>
+		<link type="text/css" rel="stylesheet" href="./css/stylesheet.css">
+		<script type="text/javascript" src="./js/jquery.js"></script>
+		<script type="text/javascript" src="./js/script.js"></script>
+		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+	</head>
+	<body>
+		<header>
+			<div>
+				<h1>A Web based SketchPad</h1>
+				<p>This is a browser version of a sketchpad, where you can draw by moving the mouse over the pad area.<br>
+				   Try changing the canvas resolution and the pen's style and color for 
+				   more attractive and colorful effects... and have fun!</p>
+			</div>
+		</header>
+		<section>
+			<fieldset>
+				<legend>Canvas Properties</legend>
+				<button id="clear">Clear canvas</button>
+				<fieldset id="inner-fieldset">
+					<label for="canvas-size">Canvas resolution <em>(10-125 cells)</em></label>
+					<input type="text" id="canvas-size">
+					<button id="new">New canvas</button>
+				</fieldset>
+				<input type="checkbox" id="show-div">
+				<label for="show-div">Show divisions</label>
+			</fieldset>
+			<fieldset>
+				<legend>Pen Styles</legend>
+				<fieldset id="inner-fieldset">
+					<label for="pen-type">Pen Type</label>
+					<input type="radio" class="pen-type" id="solid-type" name="pen-type" value="SOLID">
+					<label class="radio-label" for="solid-type">Solid</label>
+					<input type="radio" class="pen-type" id="incr-type" name="pen-type" value="INCREMENTAL">
+					<label class="radio-label" for="incr-type">Incremental</label>
+					<input type="radio" class="pen-type" id="rand-type" name="pen-type" value="RANDOM">
+					<label class="radio-label" for="rand-type">Random colors</label>
+				</fieldset>
+				<input type="color" id="pen-color">
+				<label for="pen-color">Pen Color</label>
+			</fieldset>
+			<h2>Current resolution <span id="resolution"></span> cells</h2>
+			<div id="container">
+				<!-- Here is where the grid of square cells is going to be inserted... -->
+			</div>
+		</section>
+		<footer>
+			<div>
+				<strong>Developed by </strong>
+				<img id="photo" src="./images/photo.jpg">
+				<strong>Ricardo Villegas - January, 2015</strong>
+			</div>
+		</footer>
+	</body>
+</html>

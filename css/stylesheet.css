@@ -1,0 +1,278 @@
+/* Cascading style sheet for the SketchPad page */
+
+/*
+====================
+ Default CSS reset 
+====================
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+====================
+ Typography
+====================
+*/
+
+body {
+	font-family: Arial;
+}
+
+h1, h2{
+	color: #5A7A73;
+	text-align: center;
+}
+
+h1 {
+	font-size: 42px;
+	line-height:44px;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 22px;
+	line-height:30px;
+}
+
+p {
+	text-align: center;
+	color: #000;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em{
+	font-style: italic;
+}
+
+legend {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*
+====================
+ Header
+====================
+*/
+
+header > div {
+	padding-top: 10px;
+	height: 110px;
+	background: -webkit-linear-gradient(#bbb, #ddd); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#bbb, #ddd); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#bbb, #ddd); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#bbb, #ddd); /* Standard syntax */
+	border-bottom: 2px solid black;
+}
+
+h1{
+	margin-bottom: 10px;
+}
+
+h2{
+	margin: 15px auto 0;
+}
+
+/*
+====================
+ Footer
+====================
+*/
+
+footer > div {
+	height: 35px;
+	background-color: #bbb;
+	border-top: 2px solid black;
+	padding-right: 20px;
+	text-align: right;
+	line-height:35px;
+}
+
+#photo {
+	position: relative;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin: 0 5px;
+	border-radius: 10px;
+	vertical-align: middle;
+}
+
+/*
+====================
+ UI Elements
+====================
+*/
+
+body {
+  background-color: #eee;
+}
+
+fieldset {
+	width: 750px;
+	position: relative;
+	margin: 20px auto 10px;
+	padding: 10px 0;
+	border: 2px solid gray;
+	border-radius: 5px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#inner-fieldset {
+	display: inline-block;
+	position: relative;
+	width: 450px;
+	margin: 0;
+	padding: 15px 0;
+	background-color: #f8f8f8;
+	border: 1px solid gray;
+}
+
+legend {
+	padding: 0 10px;
+}
+
+button {
+	padding: 5px 10px;
+	border-radius: 10px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+#clear {
+	position: relative;
+	margin-right: 20px;
+}
+
+#canvas-size {
+	position: relative;
+	width: 12%;
+	height: 50%;
+	margin: 0 5px;
+	position: relative;
+	left: 0;
+	font-size: 14px;
+}
+
+#new {
+	position: relative;
+	margin-left: 20px;
+	margin-right: 15px;
+}
+
+#show-div {
+	position: relative;
+	margin-left: 10px;
+}
+
+label[for="pen-type"]{
+	margin-right: 20px;
+}
+
+.radio-label {
+	font-size: 14px;
+}
+
+.pen-type {
+	margin-left: 15px;
+}
+
+#pen-color {
+	position: relative;
+	margin-left: 50px;
+	margin-right: 10px;
+	padding: 0;
+	top: 5px;
+	width: 30px;
+	height: 30px;
+}
+
+/*
+====================
+ Sketch canvas
+====================
+*/
+
+#container {
+	padding: 0;
+	position: relative;
+	margin: 5px auto 20px;
+	width: 500px;
+	height: 500px;
+	border: 6px groove gray;
+}
+
+.cell {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	outline: none;
+	float: left;
+}
+
+#container,
+.cell {
+	background-color: #555; 	
+}
+
+.row-first-cell {
+	clear: both;
+}
+
+.outlined-cell {
+	outline: 1px solid black;
+}
